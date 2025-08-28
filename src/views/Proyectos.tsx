@@ -92,21 +92,23 @@ const Proyectos = () => {
                     : (images[proyecto.imgId] as string)
                 }
                 alt={proyecto.titulo}
-                className="w-16 h-16 object-cover rounded-full"
+                className="w-8 h-8 md:w-16 md:h-16 object-cover rounded-full"
               />
-              <span className="block mt-2">{proyecto.titulo}</span>
+              <span className="block text-[12px] md:text-[18px] mt-2">
+                {proyecto.titulo}
+              </span>
             </button>
           );
         })}
       </div>
 
       {/* Contenido del proyecto seleccionado */}
-      <div className="w-full max-w-6xl p-4 shadow-md">
+      <div className="w-full max-w-6xl p-4 shadow-sm">
         {proyectos.map(
           (proyecto) =>
             proyecto.id === activeProyecto && (
               <div key={proyecto.id}>
-                <h2 className="text-2xl text-center font-bold mb-4">
+                <h2 className="text-lg md:text-3xl text-center font-bold mb-4">
                   {proyecto.titulo}
                 </h2>
                 <SliderDinamico
@@ -116,10 +118,47 @@ const Proyectos = () => {
                       : [images[proyecto.key] as string]
                   }
                 />
-                <p className="text-black flex justify-end mt-4">
+                <p className="flex justify-end mt-4 text-[#707070] font-montserrat text-md">
                   {proyecto.imagenes.length}{" "}
                   {`${proyecto.imagenes.length > 1 ? "imágenes" : "imagen"}`}
                 </p>
+
+                <div className="flex flex-col md:flex-row justify-between mt-8 pt-4 items-stretch">
+                  <div className="md:w-1/2 text-center p-4 md:px-12 flex flex-col justify-center items-center text-[#707070] font-montserrat text-lg">
+                    <p className="font-medium ">
+                      Fabricación de Esferas de Almacenamiento de 20 MBLS
+                    </p>
+                    <p className="font-medium">
+                      Fabricación de Tanques de Almacenamiento de 150 MBLS
+                    </p>
+                  </div>
+                  <div
+                    className="md:w-1/2 text-left p-4 md:px-12 md:border-l-[2px] border-[#707070]"
+                    style={
+                      {
+                        // borderLeft: "3px solid #707070",
+                        // opacity: 0.8,
+                      }
+                    }
+                  >
+                    <ul className="list-disc pl-5 text-[#707070] font-montserrat text-md">
+                      <li>
+                        Trazo, corte, conformado, biselado de placa en taller
+                        del fabricante.
+                      </li>
+                      <li>
+                        Montaje, armado, punteo de placa del cuerpo en el sitio
+                        de la obra.
+                      </li>
+                      <li>Soldadura del cuerpo.</li>
+                      <li>Montaje de estructura soporte (patas).</li>
+                      <li>Montaje, armado, soldado de boquillas.</li>
+                      <li>Montaje, armado, soldadura de accesorios.</li>
+                      <li>Montaje, armado, soldado de escalera helicoidal.</li>
+                      <li>Inspecciones y pruebas.</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             )
         )}

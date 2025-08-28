@@ -1,8 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import ImgTermigas from "../assets/img/proyectos-home/PROYECTO_TRMIGAS.jpg";
-import ImgMono from "../assets/img/proyectos-home/NUESTROSPROYECTOS-MONOPOLOS.jpg";
-import ImgPemex from "../assets/img/proyectos-home/NUESTROSPROYECTOS-DOSBOCAS.jpg";
+import ImgMono from "../assets/img/proyectos-home/MONOPOLOS.jpg";
+import ImgPemex from "../assets/img/proyectos-home/DOSBOCAS.jpg";
 interface Proyecto {
   titulo: string;
   imagen: string;

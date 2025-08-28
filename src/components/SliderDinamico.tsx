@@ -19,7 +19,7 @@ const SliderDinamico = ({ images }: SliderDinamicoProps) => {
       </div>
 
       {/* Miniaturas */}
-      <div className="flex gap-4">
+      <div className="flex gap-4 overflow-scroll">
         {/* Primera columna */}
         <div className="grid gap-2 overflow-x-auto md:overflow-y-scroll md:w-40">
           {images
@@ -41,24 +41,26 @@ const SliderDinamico = ({ images }: SliderDinamicoProps) => {
         </div>
 
         {/* Segunda columna */}
-        <div className="grid gap-2 overflow-x-auto md:overflow-y-scroll md:w-40">
-          {images
-            .filter((_, index) => index % 2 !== 0) // Imágenes en posiciones impares
-            .map((img: string, index: Key | null | undefined) => (
-              <img
-                key={index}
-                src={img}
-                alt={`Miniatura ${index}`}
-                onClick={() => setSelectedImage(img)}
-                className={`cursor-pointer rounded-md border-2 w-full h-auto transition-all duration-200
+        {images.length > 1 && (
+          <div className="grid gap-2 overflow-x-auto md:overflow-y-scroll md:w-40">
+            {images
+              .filter((_, index) => index % 2 !== 0) // Imágenes en posiciones impares
+              .map((img: string, index: Key | null | undefined) => (
+                <img
+                  key={index}
+                  src={img}
+                  alt={`Miniatura ${index}`}
+                  onClick={() => setSelectedImage(img)}
+                  className={`cursor-pointer rounded-md border-2 w-full h-auto transition-all duration-200
                 ${
                   selectedImage === img
                     ? "border-blue-500 scale-105"
                     : "border-gray-300"
                 }`}
-              />
-            ))}
-        </div>
+                />
+              ))}
+          </div>
+        )}
       </div>
     </div>
   );
