@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import ImgDosBocas from "../assets/img/proyectos-home/NUESTROSPROYECTOS-DOSBOCAS-ON.jpg";
+import ImgTermigas from "../assets/img/proyectos-home/PROYECTO_TRMIGAS.jpg";
 import ImgMono from "../assets/img/proyectos-home/NUESTROSPROYECTOS-MONOPOLOS.jpg";
 import ImgPemex from "../assets/img/proyectos-home/NUESTROSPROYECTOS-DOSBOCAS.jpg";
 interface Proyecto {
@@ -16,8 +16,8 @@ interface ProyectosProps {
 
 const defaultProyectos: Proyecto[] = [
   {
-    titulo: "DOS BOCAS",
-    imagen: ImgDosBocas,
+    titulo: "TERMIGAS",
+    imagen: ImgTermigas,
   },
   {
     titulo: "MONOPOLOS",

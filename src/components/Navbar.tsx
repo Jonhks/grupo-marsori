@@ -5,15 +5,15 @@ import {
 } from "@headlessui/react";
 import { Link } from "react-router-dom";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import { FaFacebookF, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
+import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 
 const Navbar: React.FC = () => {
   const navigation = [
-    { name: "Inicio", path: "/", current: true },
-    { name: "Nosotros", path: "/nosotros", current: false },
-    { name: "Servicios", path: "/servicios", current: false },
-    { name: "Proyectos", path: "/proyectos", current: false },
-    { name: "Contacto", path: "/contacto", current: false },
+    { name: "INICIO", path: "/", current: true },
+    { name: "NOSOTROS", path: "/nosotros", current: false },
+    { name: "SERVICIOS", path: "/servicios", current: false },
+    { name: "PROYECTOS", path: "/proyectos", current: false },
+    { name: "CONTACTO", path: "/contacto", current: false },
   ];
 
   function classNames(...classes: string[]) {
@@ -64,8 +64,8 @@ const Navbar: React.FC = () => {
               </div>
             </div>
           </div>
+          {/* Iconos sociales alineados a la derecha */}
           <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 gap-2">
-            {/* Iconos sociales alineados a la derecha */}
             <a
               href="https://www.facebook.com/GrupoMarsori"
               target="_blank"
@@ -84,7 +84,7 @@ const Navbar: React.FC = () => {
             >
               <FaLinkedinIn size={15} />
             </a>
-            <a
+            {/* <a
               href="https://wa.me/521234567890?text=Hola%20quiero%20información"
               target="_blank"
               rel="noopener noreferrer"
@@ -92,7 +92,7 @@ const Navbar: React.FC = () => {
               aria-label="WhatsApp"
             >
               <FaWhatsapp size={15} />
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

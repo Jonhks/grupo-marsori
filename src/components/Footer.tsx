@@ -1,4 +1,4 @@
-import { FaFacebookF, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
+import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 interface MenuItem {
@@ -63,7 +63,7 @@ const Footer: React.FC<FooterProps> = ({ menu = defaultMenu }) => {
             >
               <FaLinkedinIn size={15} />
             </a>
-            <a
+            {/* <a
               href="https://wa.me/521234567890?text=Hola%20quiero%20información"
               target="_blank"
               rel="noopener noreferrer"
@@ -71,7 +71,7 @@ const Footer: React.FC<FooterProps> = ({ menu = defaultMenu }) => {
               aria-label="WhatsApp"
             >
               <FaWhatsapp size={15} />
-            </a>
+            </a> */}
           </div>
         </div>
         {/* Desktop: menú/contacto a la izquierda, iconos a la derecha */}
@@ -112,7 +112,7 @@ const Footer: React.FC<FooterProps> = ({ menu = defaultMenu }) => {
             >
               <FaLinkedinIn size={15} />
             </a>
-            <a
+            {/* <a
               href="https://wa.me/521234567890?text=Hola%20quiero%20información"
               target="_blank"
               rel="noopener noreferrer"
@@ -120,7 +120,7 @@ const Footer: React.FC<FooterProps> = ({ menu = defaultMenu }) => {
               aria-label="WhatsApp"
             >
               <FaWhatsapp size={15} />
-            </a>
+            </a> */}
           </div>
         </div>
       </div>
