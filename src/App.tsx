@@ -1,4 +1,3 @@
-import Logo from "./assets/img/logomarsori.png";
 import Swiper from "./components/Swiper/Swiper";
 import Servicios from "./components/Servicios";
 import Proyectos from "./components/Proyectos";
@@ -9,7 +8,7 @@ function App() {
     <div className="">
       <div className="flex justify-center items-center">
         <img
-          src={Logo}
+          src={"https://grupomarsori.com/images/logomarsori.png"}
           alt="Logo"
           className="m-2 w-32 sm:w-40 md:w-56 lg:w-64"
         />

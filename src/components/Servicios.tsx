@@ -42,8 +42,8 @@ const Servicios: React.FC<ServiciosProps> = ({
       </h2>
       <div className="relative flex flex-col md:flex-row gap-8 w-full max-w-5xl justify-center">
         {/* Título vertical Ingeniería fuera del cuadro */}
-        <div className="hidden md:flex absolute left-[-2.5rem] top-1/2 -translate-y-1/2 z-10">
-          <span className="font-montserrat font-medium text-2xl md:text-3xl text-[#4e4e4e] tracking-tight rotate-[-90deg]">
+        <div className="md:flex text-center md:absolute md:left-[-2.5rem] top-1/2 -translate-y-1/2 z-10">
+          <span className="font-montserrat font-bold md:font-medium text-2xl md:text-3xl text-[#4e4e4e] tracking-tight rotate-[-90deg]">
             {ingenieriaTitulo}
           </span>
         </div>
@@ -59,6 +59,11 @@ const Servicios: React.FC<ServiciosProps> = ({
               </li>
             ))}
           </ul>
+        </div>
+        <div className="md:hidden text-center">
+          <span className="font-montserrat font-bold text-2xl md:text-3xl text-[#4e4e4e] tracking-tight rotate-90">
+            {gestionTitulo}
+          </span>
         </div>
         {/* Columna Gestión */}
         <div className="flex-1 border border-gray-300 bg-white min-h-[350px] flex items-center md:mr-16">

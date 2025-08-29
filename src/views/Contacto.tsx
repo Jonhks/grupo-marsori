@@ -1,21 +1,20 @@
 import { useState } from "react";
-import LogoMarsori from "../assets/img/logomarsori.png";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 
 const InformacionContacto = () => {
   return (
     <div
-      className="w-full h-[95] md:pb-30 md:w-1/2 px-4 flex flex-col items-center justify-between"
+      className="w-full md:pb-30 md:w-1/2 px-4 flex flex-col items-center justify-between"
       style={{ fontFamily: "Montserrat" }}
     >
       <div className="w-full flex flex-col justify-center items-center">
         <img
-          src={LogoMarsori}
+          src={"https://grupomarsori.com/images/logomarsori.png"}
           alt="Logo Marsori"
           className="w-56 mb-1"
         />
       </div>
-      <div className=" h-17 inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 gap-2 justify-center mb-4">
+      <div className="h-17 inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 gap-2 justify-center mb-4">
         <a
           href="https://www.facebook.com/GrupoMarsori"
           target="_blank"
@@ -232,7 +231,7 @@ const FormularioContacto = () => {
 
 const Contacto = () => {
   return (
-    <div className="w-full h-full flex flex-col md:flex-row py-12 items-center justify-center">
+    <div className="w-full h-full flex flex-col md:flex-row py-12 items-center justify-stretch">
       <InformacionContacto />
       <FormularioContacto />
     </div>

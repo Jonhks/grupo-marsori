@@ -42,7 +42,7 @@ const Servicios = () => {
         {/* Ingeniería */}
         <div className="flex flex-col md:flex-row justify-evenly items-center w-full">
           <h2 className="text-3xl font-bold text-[#818181] mb-4 w-full md:w-1/2 text-center">
-            Gestión de <br /> Proyectos
+            GESTIÓN <br /> PROYECTOS
           </h2>
           <ul className="text-lg text-[#707070] font-medium text-left w-full md:w-1/2">
             <li>Gestión de Riesgos</li>

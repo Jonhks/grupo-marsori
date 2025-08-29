@@ -3,17 +3,18 @@ import {
   DisclosureButton,
   DisclosurePanel,
 } from "@headlessui/react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 
 const Navbar: React.FC = () => {
+  const location = useLocation();
   const navigation = [
-    { name: "INICIO", path: "/", current: true },
-    { name: "NOSOTROS", path: "/nosotros", current: false },
-    { name: "SERVICIOS", path: "/servicios", current: false },
-    { name: "PROYECTOS", path: "/proyectos", current: false },
-    { name: "CONTACTO", path: "/contacto", current: false },
+    { name: "INICIO", path: "/" },
+    { name: "NOSOTROS", path: "/nosotros" },
+    { name: "SERVICIOS", path: "/servicios" },
+    { name: "PROYECTOS", path: "/proyectos" },
+    { name: "CONTACTO", path: "/contacto" },
   ];
 
   function classNames(...classes: string[]) {
@@ -50,11 +51,13 @@ const Navbar: React.FC = () => {
                   <Link
                     key={item.name}
                     to={item.path}
-                    aria-current={item.current ? "page" : undefined}
+                    aria-current={
+                      location.pathname === item.path ? "page" : undefined
+                    }
                     className={classNames(
-                      item.current
-                        ? "bg-gray-950/50 text-white"
-                        : "text-gray-300 hover:bg-white/5 hover:text-white",
+                      location.pathname === item.path
+                        ? "bg-gray-950/50 text-white font-bold"
+                        : "text-gray-400 hover:bg-white/5 hover:text-white",
                       "rounded-md px-3 py-2 text-sm font-medium"
                     )}
                   >
@@ -84,15 +87,6 @@ const Navbar: React.FC = () => {
             >
               <FaLinkedinIn size={15} />
             </a>
-            {/* <a
-              href="https://wa.me/521234567890?text=Hola%20quiero%20información"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-gray-400 text-gray-400 hover:text-white hover:border-white transition-colors"
-              aria-label="WhatsApp"
-            >
-              <FaWhatsapp size={15} />
-            </a> */}
           </div>
         </div>
       </div>
@@ -104,9 +98,11 @@ const Navbar: React.FC = () => {
               key={item.name}
               as={Link}
               to={item.path}
-              aria-current={item.current ? "page" : undefined}
+              aria-current={
+                location.pathname === item.path ? "page" : undefined
+              }
               className={classNames(
-                item.current
+                location.pathname === item.path
                   ? "bg-gray-950/50 text-white"
                   : "text-gray-300 hover:bg-white/5 hover:text-white",
                 "block rounded-md px-3 py-2 text-base font-medium"

@@ -1,6 +1,5 @@
-import ImgNosotros from "../assets/img/nosotros/nosotros01.png";
-import LogoMarsori from "../assets/img/logomarsori.png";
-import ImgBanner from "../assets/img/nosotros/MISION.jpg";
+// import ImgNosotros from "../assets/img/nosotros/nosotros01.jpg";
+// import ImgBanner from "../assets/img/nosotros/MISION.jpg";
 
 const Nosotros = () => {
   return (
@@ -9,7 +8,7 @@ const Nosotros = () => {
         {/* Imagen */}
         <div className="w-full md:w-1/2 flex-shrink-0">
           <img
-            src={ImgNosotros}
+            src={"https://grupomarsori.com/images/nosotros01.jpg"}
             alt="Instalación Marsori"
             className="w-full h-auto object-cover rounded-md shadow-md"
           />
@@ -17,7 +16,7 @@ const Nosotros = () => {
         {/* Texto y logo */}
         <div className="w-full md:w-1/2 flex flex-col justify-center items-start">
           <img
-            src={LogoMarsori}
+            src={"https://grupomarsori.com/images/logomarsori.png"}
             alt="Logo Marsori"
             className="w-56 mb-6"
           />
@@ -48,7 +47,7 @@ const Nosotros = () => {
       </div>
       <div className="mt-14 left-0 top-0 w-screen h-56 md:h-72 relative flex items-center justify-center overflow-hidden">
         <img
-          src={ImgBanner}
+          src={"https://grupomarsori.com/images/MISION.jpg"}
           alt="Banner Misión"
           className="w-full h-full object-cover opacity-80 block"
         />

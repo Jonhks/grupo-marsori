@@ -24,7 +24,7 @@ const defaultProyectos: Proyecto[] = [
     imagen: ImgMono,
   },
   {
-    titulo: "PEMEX",
+    titulo: "Dos Bocas",
     imagen: ImgPemex,
   },
 ];

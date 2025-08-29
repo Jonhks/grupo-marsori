@@ -23,7 +23,7 @@ const SliderDinamico = ({ images }: SliderDinamicoProps) => {
         {/* Primera columna */}
         <div className="grid gap-2 overflow-x-auto md:overflow-y-scroll md:w-40">
           {images
-            .filter((_, index) => index % 2 === 0) // Imágenes en posiciones pares
+            // .filter((_, index) => index % 2 === 0) // Imágenes en posiciones pares
             .map((img: string, index: Key | null | undefined) => (
               <img
                 key={index}
@@ -41,7 +41,7 @@ const SliderDinamico = ({ images }: SliderDinamicoProps) => {
         </div>
 
         {/* Segunda columna */}
-        {images.length > 1 && (
+        {/* {images.length > 1 && (
           <div className="grid gap-2 overflow-x-auto md:overflow-y-scroll md:w-40">
             {images
               .filter((_, index) => index % 2 !== 0) // Imágenes en posiciones impares
@@ -60,7 +60,7 @@ const SliderDinamico = ({ images }: SliderDinamicoProps) => {
                 />
               ))}
           </div>
-        )}
+        )} */}
       </div>
     </div>
   );

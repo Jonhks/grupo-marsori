@@ -82,7 +82,7 @@ const Footer: React.FC<FooterProps> = ({ menu = defaultMenu }) => {
                 <li key={idx}>
                   <Link
                     to={item.to}
-                    className="hover:text-white transition-colors"
+                    className="text-sm hover:text-white transition-colors"
                     onClick={() => {
                       window.scrollTo({ top: 0, behavior: "smooth" });
                     }}
