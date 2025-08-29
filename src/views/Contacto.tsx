@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+import emailjs from "@emailjs/browser";
+import Swal from "sweetalert2";
 
 const InformacionContacto = () => {
   return (
@@ -65,6 +67,8 @@ const FormularioContacto = () => {
     mensaje: "",
   });
 
+  const [buttonText, setButtonText] = useState("ENVIAR");
+
   const validateEmail = (email: string): boolean => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
@@ -92,14 +96,51 @@ const FormularioContacto = () => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
     if (validateForm()) {
-      alert("Formulario enviado correctamente.");
-      setFormData({
-        nombre: "",
-        apellido: "",
-        email: "",
-        telefono: "",
-        mensaje: "",
-      });
+      setButtonText("Enviando..."); // Cambiar el texto del botón
+      emailjs
+        .send(
+          import.meta.env.VITE_EMAILJS_SERVICE_ID,
+          import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+          {
+            nombre: formData.nombre,
+            apellido: formData.apellido,
+            email: formData.email,
+            telefono: formData.telefono,
+            mensaje: formData.mensaje,
+          },
+          import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+        )
+        .then(
+          () => {
+            Swal.fire({
+              title: "Correo enviado correctamente",
+              icon: "success",
+              confirmButtonColor: "#000000",
+              confirmButtonText: "Aceptar",
+              allowOutsideClick: false,
+              draggable: true,
+            });
+            setFormData({
+              nombre: "",
+              apellido: "",
+              email: "",
+              telefono: "",
+              mensaje: "",
+            });
+            setButtonText("ENVIAR"); // Restaurar el texto del botón
+          },
+          (error: string) => {
+            Swal.fire({
+              icon: "error",
+              title: "Oops...",
+              text: `${error}`,
+            });
+            alert(
+              "Hubo un error al enviar el correo. Por favor, inténtalo de nuevo."
+            );
+            setButtonText("ENVIAR"); // Restaurar el texto del botón
+          }
+        );
     }
   };
 
@@ -219,9 +260,9 @@ const FormularioContacto = () => {
         <div className=" flex items-center justify-center">
           <button
             type="submit"
-            className="w-[50%] bg-black text-white py-2 rounded-md font-medium"
+            className="w-[50%] bg-black text-white py-2 rounded-md font-medium hover:cursor-pointer hover:bg-gray-700"
           >
-            ENVIAR
+            {buttonText}
           </button>
         </div>
       </form>
