@@ -32,7 +32,7 @@ const Contacto: React.FC<ContactoProps> = ({
         <div className="flex flex-col md:flex-row items-center justify-center gap-12 w-full mb-6">
           {/* Íconos */}
           {/* Iconos sociales alineados a la derecha */}
-          <div className=" relative md:absolute h-17 inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 gap-2">
+          <div className=" relative md:absolute h-17 inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto  sm:pr-0 gap-2">
             <a
               href="https://www.facebook.com/GrupoMarsori"
               target="_blank"

@@ -25,7 +25,7 @@ const InformacionContacto = () => {
             className="w-56 mb-1"
           />
         </div>
-        <div className="h-17 inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 gap-2 justify-center mb-4">
+        <div className="h-17 inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto  sm:pr-0 gap-2 justify-center mb-4">
           <a
             href="https://www.facebook.com/GrupoMarsori"
             target="_blank"
