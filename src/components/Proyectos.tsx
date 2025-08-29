@@ -24,7 +24,7 @@ const defaultProyectos: Proyecto[] = [
     imagen: ImgMono,
   },
   {
-    titulo: "Dos Bocas",
+    titulo: "DOS BOCAS",
     imagen: ImgPemex,
   },
 ];
@@ -42,6 +42,13 @@ const Proyectos: React.FC<ProyectosProps> = ({
       navigate("/proyectos");
     }
   };
+
+  const handleProyectoClick = (proyecto: Proyecto) => {
+    navigate("/proyectos", {
+      state: { proyectoSeleccionado: proyecto.titulo.toUpperCase() },
+    });
+  };
+
   return (
     <section className="w-full flex flex-col items-center py-12 bg-white">
       <h2 className="font-montserrat font-bold text-2xl md:text-3xl text-[#000] text-center mb-10 tracking-tight">
@@ -51,9 +58,10 @@ const Proyectos: React.FC<ProyectosProps> = ({
         {proyectos.map((proyecto, idx) => (
           <div
             key={idx}
-            className="flex flex-col items-center w-full md:w-1/3"
+            className="flex flex-col items-center w-full md:w-1/3 cursor-pointer"
+            onClick={() => handleProyectoClick(proyecto)}
           >
-            <div className="w-full h-80 aspect-square overflow-hidden bg-gray-200 flex items-center justify-center group relative cursor-pointer">
+            <div className="w-full h-80 aspect-square overflow-hidden bg-gray-200 flex items-center justify-center group relative">
               <img
                 src={proyecto.imagen}
                 alt={proyecto.titulo}

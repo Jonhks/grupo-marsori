@@ -2,50 +2,60 @@ import { useState } from "react";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
+import { motion } from "framer-motion";
 
 const InformacionContacto = () => {
+  const Motion = motion.section;
+
   return (
     <div
       className="w-full md:pb-30 md:w-1/2 px-4 flex flex-col items-center justify-between"
       style={{ fontFamily: "Montserrat" }}
     >
-      <div className="w-full flex flex-col justify-center items-center">
-        <img
-          src={"https://grupomarsori.com/images/logomarsori.png"}
-          alt="Logo Marsori"
-          className="w-56 mb-1"
-        />
-      </div>
-      <div className="h-17 inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 gap-2 justify-center mb-4">
-        <a
-          href="https://www.facebook.com/GrupoMarsori"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-black text-black hover:font-bold hover:border-gray-700 transition-colors"
-          aria-label="Facebook"
-        >
-          <FaFacebookF size={15} />
-        </a>
-        <a
-          href="https://www.linkedin.com/company/grupomarsori/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-black text-black hover:font-bold hover:border-gray-700 transition-colors"
-          aria-label="LinkedIn"
-        >
-          <FaLinkedinIn size={15} />
-        </a>
-      </div>
-      <p className="text-[#4e4e4e] mb-0 text-center">Correo Electrónico</p>
-      <p className="text-[#4e4e4e] mb-4 text-center">info@marsori.com</p>
-      <p className="text-[#4e4e4e] mb-2 text-center">Teléfonos</p>
-      <ul className="text-[#4e4e4e] space-y-1 text-center">
-        <li>(55) 7587 6491</li>
-        <li>(55) 7587 6492</li>
-        <li>(55) 7587 6493</li>
-        <li>(55) 7587 6495</li>
-        <li>(55) 7587 6497</li>
-      </ul>
+      <Motion
+        initial={{ opacity: 0, y: -100 }} // Comienza abajo y transparente
+        whileInView={{ opacity: 1, y: 0 }} // Termina en su lugar y visible
+        transition={{ duration: 1.7, ease: "easeOut" }}
+        viewport={{ once: true }}
+      >
+        <div className="w-full flex flex-col justify-center items-center">
+          <img
+            src={"https://grupomarsori.com/images/logomarsori.png"}
+            alt="Logo Marsori"
+            className="w-56 mb-1"
+          />
+        </div>
+        <div className="h-17 inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 gap-2 justify-center mb-4">
+          <a
+            href="https://www.facebook.com/GrupoMarsori"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-black text-black hover:font-bold hover:border-gray-700 transition-colors"
+            aria-label="Facebook"
+          >
+            <FaFacebookF size={15} />
+          </a>
+          <a
+            href="https://www.linkedin.com/company/grupomarsori/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-black text-black hover:font-bold hover:border-gray-700 transition-colors"
+            aria-label="LinkedIn"
+          >
+            <FaLinkedinIn size={15} />
+          </a>
+        </div>
+        <p className="text-[#4e4e4e] mb-0 text-center">Correo Electrónico</p>
+        <p className="text-[#4e4e4e] mb-4 text-center">info@marsori.com</p>
+        <p className="text-[#4e4e4e] mb-2 text-center">Teléfonos</p>
+        <ul className="text-[#4e4e4e] space-y-1 text-center">
+          <li>(55) 7587 6491</li>
+          <li>(55) 7587 6492</li>
+          <li>(55) 7587 6493</li>
+          <li>(55) 7587 6495</li>
+          <li>(55) 7587 6497</li>
+        </ul>
+      </Motion>
     </div>
   );
 };
@@ -150,39 +160,83 @@ const FormularioContacto = () => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
+  const Motion = motion.section;
 
   return (
     <div
       className="w-full md:w-1/2 px-4 py-8"
       style={{ fontFamily: "Montserrat" }}
     >
-      <h1
-        className="text-4xl font-bold text-center mb-8"
-        style={{ color: "#000000" }}
+      <Motion
+        initial={{ opacity: 0, y: 100 }} // Comienza abajo y transparente
+        whileInView={{ opacity: 1, y: 0 }} // Termina en su lugar y visible
+        transition={{ duration: 1.7, ease: "easeOut" }}
+        viewport={{ once: true }}
       >
-        CONTÁCTANOS
-      </h1>
-      <form
-        onSubmit={handleSubmit}
-        className="space-y-6"
-      >
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <h1
+          className="text-4xl font-bold text-center mb-8"
+          style={{ color: "#000000" }}
+        >
+          CONTÁCTANOS
+        </h1>
+        <form
+          onSubmit={handleSubmit}
+          className="space-y-6"
+        >
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <label
+                className="block text-sm font-medium"
+                style={{ color: "#737373" }}
+              >
+                Nombre
+              </label>
+              <input
+                type="text"
+                name="nombre"
+                value={formData.nombre}
+                onChange={handleChange}
+                className="w-full border border-[#b9b8b8] rounded-md p-2"
+              />
+              {errors.nombre && (
+                <p className="text-red-500 text-sm">{errors.nombre}</p>
+              )}
+            </div>
+            <div>
+              <label
+                className="block text-sm font-medium"
+                style={{ color: "#737373" }}
+              >
+                Apellido
+              </label>
+              <input
+                type="text"
+                name="apellido"
+                value={formData.apellido}
+                onChange={handleChange}
+                className="w-full border border-[#b9b8b8] rounded-md p-2"
+              />
+              {errors.apellido && (
+                <p className="text-red-500 text-sm">{errors.apellido}</p>
+              )}
+            </div>
+          </div>
           <div>
             <label
               className="block text-sm font-medium"
               style={{ color: "#737373" }}
             >
-              Nombre
+              Email
             </label>
             <input
-              type="text"
-              name="nombre"
-              value={formData.nombre}
+              type="email"
+              name="email"
+              value={formData.email}
               onChange={handleChange}
               className="w-full border border-[#b9b8b8] rounded-md p-2"
             />
-            {errors.nombre && (
-              <p className="text-red-500 text-sm">{errors.nombre}</p>
+            {errors.email && (
+              <p className="text-red-500 text-sm">{errors.email}</p>
             )}
           </div>
           <div>
@@ -190,82 +244,46 @@ const FormularioContacto = () => {
               className="block text-sm font-medium"
               style={{ color: "#737373" }}
             >
-              Apellido
+              Teléfono
             </label>
             <input
               type="text"
-              name="apellido"
-              value={formData.apellido}
+              name="telefono"
+              value={formData.telefono}
               onChange={handleChange}
               className="w-full border border-[#b9b8b8] rounded-md p-2"
             />
-            {errors.apellido && (
-              <p className="text-red-500 text-sm">{errors.apellido}</p>
+            {errors.telefono && (
+              <p className="text-red-500 text-sm">{errors.telefono}</p>
             )}
           </div>
-        </div>
-        <div>
-          <label
-            className="block text-sm font-medium"
-            style={{ color: "#737373" }}
-          >
-            Email
-          </label>
-          <input
-            type="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            className="w-full border border-[#b9b8b8] rounded-md p-2"
-          />
-          {errors.email && (
-            <p className="text-red-500 text-sm">{errors.email}</p>
-          )}
-        </div>
-        <div>
-          <label
-            className="block text-sm font-medium"
-            style={{ color: "#737373" }}
-          >
-            Teléfono
-          </label>
-          <input
-            type="text"
-            name="telefono"
-            value={formData.telefono}
-            onChange={handleChange}
-            className="w-full border border-[#b9b8b8] rounded-md p-2"
-          />
-          {errors.telefono && (
-            <p className="text-red-500 text-sm">{errors.telefono}</p>
-          )}
-        </div>
-        <div>
-          <label
-            className="block text-sm font-medium"
-            style={{ color: "#737373" }}
-          >
-            Mensaje
-          </label>
-          <textarea
-            name="mensaje"
-            value={formData.mensaje}
-            onChange={handleChange}
-            className="w-full border border-[#b9b8b8] rounded-md p-2"
-          ></textarea>
-          {errors.mensaje && (
-            <p className="text-red-500 text-sm">{errors.mensaje}</p>
-          )}
-        </div>
-        <div className=" flex items-center justify-center">
-          <button
-            type="submit"
-            className="w-[50%] bg-black text-white py-2 rounded-md font-medium hover:cursor-pointer hover:bg-gray-700"
-          >
-            {buttonText}
-          </button>
-        </div>
-      </form>
+          <div>
+            <label
+              className="block text-sm font-medium"
+              style={{ color: "#737373" }}
+            >
+              Mensaje
+            </label>
+            <textarea
+              name="mensaje"
+              value={formData.mensaje}
+              onChange={handleChange}
+              className="w-full border border-[#b9b8b8] rounded-md p-2"
+            ></textarea>
+            {errors.mensaje && (
+              <p className="text-red-500 text-sm">{errors.mensaje}</p>
+            )}
+          </div>
+          <div className=" flex items-center justify-center">
+            <button
+              type="submit"
+              className="w-[50%] bg-black text-white py-2 rounded-md font-medium hover:cursor-pointer hover:bg-gray-700"
+            >
+              {buttonText}
+            </button>
+          </div>
+        </form>
+      </Motion>
     </div>
   );
 };

@@ -1,7 +1,7 @@
 import { Swiper as SwiperComponent, SwiperSlide } from "swiper/react";
 import "../../../node_modules/swiper/swiper-bundle.min.css";
 import "../../../node_modules/swiper/swiper.min.css";
-import { Navigation, Pagination } from "swiper/modules";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
 export default function Swiper() {
   // Ejemplo de imágenes, reemplaza por tus propias rutas
@@ -18,13 +18,14 @@ export default function Swiper() {
       <SwiperComponent
         navigation={true}
         pagination={{ clickable: true }}
-        modules={[Navigation, Pagination]}
-        className="rounded-lg shadow-lg bg-white"
+        autoplay={{ delay: 2000, disableOnInteraction: false }}
+        modules={[Navigation, Pagination, Autoplay]}
+        className=" shadow-lg bg-white"
       >
         {images.map((img, i) => (
           <SwiperSlide key={i}>
             <div
-              className="h-62 md:h-96 w-full bg-cover bg-center rounded-lg flex items-center justify-center"
+              className="h-62 md:h-96 w-full bg-cover bg-center flex items-center justify-center"
               style={{
                 backgroundImage: `url(${img})`,
               }}

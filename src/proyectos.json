@@ -1,14 +1,23 @@
 [
   {
-    "id": "termigas",
+    "id": "TERMIGAS",
     "titulo": "TERMIGAS",
-    "texto": "Instalación de recepción, almacenamiento y entrega de 50,000 barriles de gas LP en Atotonilco de Tula, Hidalgo\n• Periodo: 2010¬2014.\nServicios: Gestión de proyectos y supervisión, operación y mantenimiento.\n\nConstrucción: 25 profesionales.\nPersonal de operaciones y mantenimiento empleado: 25 profesionales (3 turnos).",
+    "texto-l": [
+      "Instalación de recepción, almacenamiento y entrega de 50,000 barriles de gas LP en Atotonilco de Tula, Hidalgo ",
+      "- Periodo: 2010¬2014.",
+      "Servicios: Gestión de proyectos y supervisión, operación y mantenimiento."
+    ],
+    "texto-r": [
+      "Construcción: 25 profesionales.",
+      "Personal de operaciones y mantenimiento empleado: 25",
+      "profesionales (3 turnos)."
+    ],
     "imgId": "PROYECTO_TRMIGAS",
     "imagenes": ["TERMIGAS_01"],
     "key": "TERMIGAS"
   },
   {
-    "id": "dos-bocas",
+    "id": "DOS BOCAS",
     "titulo": "DOS BOCAS",
     "texto": "Fabricación de Esferas de Almacenamiento de 20 MBLS\nFabricación de Tanques de Almacenamiento de 150 MBLS\n\n• Trazo, corte, conformado, biselado de placa en taller del fabricante.\n• Montaje, armado, punteo de placa del cuerpo en el sitio de la obra.\n• Soldadura del cuerpo.\n• Montaje de estructura soporte (patas).\n• Montaje, armado, soldeo de boquillas.\n• Montaje, armado y soldadura de accesorios.\n• Montaje, armado, soldeo de escalera helicoidal\n• Inspecciones y pruebas.\n\nFABRICACIÓN DE ESFERAS DE ALMACENAMIENTO DE 20 MBLS.\n\nDesarrollo: Construcción de 8 esferas de almacenamiento de 20 MBLS,\na) Trazo, corte, conformado de la esfera y biselado de placa en taller\nb) Montaje, armado de la esfera, punteo de placa del cuerpo de las esferas en el sitio de la obra.\nc) Soldadura del cuerpo de las esferas en sitio.\nd) Montaje de estructura soporte (patas).\ne) Montaje, armado, soldeo de boquillas.\nf) Montaje, armado y soldadura de accesorios.\ng) Montaje, armado, soldeo de escalera helicoidal\nh) Inspecciones y pruebas.\n\nFABRICACION DE TANQUES DE ALMACENAMIENTO DE 150 MBL\nDesarrollo: Construcción de 7 tanques de almacenamiento de 150,000 MBLS,\na) Montaje, armado, soldeo de placa de fondo.\nMontaje, armado, de placa de cuerpo\nSoldadura del cuerpo de las esferas en sitio.\nd) Montaje de estructura soporte cúpula.\ne) Montaje de cúpula o domo.\nf) Soldadura de fondo.\ng) Soldadura de cúpula\nh) Montaje de membrana flotante interna.\ni) Montaje y soldadura de accesorios.\nj) Inspecciones y pruebas.\nk) Terminación mecánica.\n1) Trabajos de pintura y aislamiento.",
     "imgId": "DOSBOCAS",
@@ -33,7 +42,7 @@
     "key": "DOSBOCAS"
   },
   {
-    "id": "monopolos",
+    "id": "MONOPOLOS",
     "titulo": "MONOPOLOS",
     "texto": "Servicio Integral de las Telecomunicaciones Industriales Redundantes para las Tecnologías Operacionales del CENAGAS (SITROC)\n\n• Estudios Preliminares. Mecánica de suelos o Geotécnico.\n• Estudios Preliminares. Resistividad.\n• Estudios Preliminares. Topografía.\n• Estudios Preliminares. Georradar.\n• Elaboración y emisión de Ingeniería Civil.\n• Elaboración y emisión de Ingeniería Electromecánica. Con emisión de listas de materiales.\n• Elaboración y emisión de Ingeniería de Telecomunicaciones con emisión de lista de materiales.\n• Suministros de materiales para Obra Electromecánica. Incluyendo sistema de Tierras.\n• Suministros de materiales para Obra de Telecomunicaciones. Incluyendo sistema de Tierras.\n• Recolección de Poste (Monopolo)\n• Montaje de Poste (Monopolo)\n• Construcción de Cimentación de Poste (Monopolo)\n• Construcción de Canalizaciones Civiles.\n• Instalación e interconexión de Obra Electromecánica.\n• Instalación e interconexión de conductores de Obra de Telecomunicaciones.\n• Instalación e interconexión de Sistema de Tierras Eléctrico.\n• Instalación e interconexión de Sistema de Tierras de Telecomunicaciones.\n• Apoyo parametrización de equipos de Teltronic.\n• Apoyo para pruebas locales. Con emisión de protocolos.\n• Apoyo para pruebas de enlace a nivel superior. Con emisión de protocolos.\n• As bult.",
     "imgId": "MONOPOLOS",
