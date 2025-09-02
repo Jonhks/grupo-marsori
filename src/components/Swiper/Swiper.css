@@ -1,0 +1,8 @@
+.swiper-pagination-bullet {
+  background-color: black !important; /* Color de los puntos inactivos */
+  /* opacity: 1; Asegura que los puntos sean visibles */
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fff !important; /* Color del punto activo */
+}

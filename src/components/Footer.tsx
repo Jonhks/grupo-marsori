@@ -28,7 +28,7 @@ const Footer: React.FC<FooterProps> = ({ menu = defaultMenu }) => {
         {/* Mobile: menú/contacto a la izquierda, iconos a la derecha */}
         <div className="w-full flex flex-row justify-between items-start md:hidden">
           <div>
-            <ul className="flex flex-col gap-2 text-[#b3b2b2] font-montserrat text-base">
+            <ul className="flex flex-col gap-2 text-[#b3b2b2] font-montserrat text-sm">
               {menu.map((item, idx) => (
                 <li key={idx}>
                   <Link
@@ -77,7 +77,7 @@ const Footer: React.FC<FooterProps> = ({ menu = defaultMenu }) => {
         {/* Desktop: menú/contacto a la izquierda, iconos a la derecha */}
         <div className="hidden md:flex flex-row justify-between items-center w-full">
           <div className="flex flex-row gap-8">
-            <ul className="flex flex-col gap-2 text-[#b3b2b2] font-montserrat text-lg">
+            <ul className="flex flex-col gap-2 text-[#b3b2b2] font-montserrat text-sm">
               {menu.map((item, idx) => (
                 <li key={idx}>
                   <Link

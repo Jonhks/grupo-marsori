@@ -2,25 +2,19 @@
   {
     "id": "TERMIGAS",
     "titulo": "TERMIGAS",
-    "texto-l": [
-      "Instalación de recepción, almacenamiento y entrega de 50,000 barriles de gas LP en Atotonilco de Tula, Hidalgo ",
-      "- Periodo: 2010¬2014.",
-      "Servicios: Gestión de proyectos y supervisión, operación y mantenimiento."
-    ],
-    "texto-r": [
-      "Construcción: 25 profesionales.",
-      "Personal de operaciones y mantenimiento empleado: 25",
-      "profesionales (3 turnos)."
-    ],
+    "texto-izquierdo": "Terminal Portuaria de Almacenamiento de Gas LP de 450,000 barriles en Tuxpan, Veracruz",
+    "text-derecho": "Cliente: Termigas, SA de CV \n Periodo: 2009­2011 \n Periodo O&M: 2012­2014 \n Servicios: Gestión de Proyectos, EPC Operaciones y Mantenimiento \n Personal empleado: \n 27 profesionales \n Personal O&M: 30 empleados en 3 turnos",
     "imgId": "PROYECTO_TRMIGAS",
-    "imagenes": ["TERMIGAS_01"],
+    "imagen": "https://grupomarsori.com/images/PROYECTO_TRMIGAS.jpg",
     "key": "TERMIGAS"
   },
   {
-    "id": "DOS BOCAS",
-    "titulo": "DOS BOCAS",
-    "texto": "Fabricación de Esferas de Almacenamiento de 20 MBLS\nFabricación de Tanques de Almacenamiento de 150 MBLS\n\n• Trazo, corte, conformado, biselado de placa en taller del fabricante.\n• Montaje, armado, punteo de placa del cuerpo en el sitio de la obra.\n• Soldadura del cuerpo.\n• Montaje de estructura soporte (patas).\n• Montaje, armado, soldeo de boquillas.\n• Montaje, armado y soldadura de accesorios.\n• Montaje, armado, soldeo de escalera helicoidal\n• Inspecciones y pruebas.\n\nFABRICACIÓN DE ESFERAS DE ALMACENAMIENTO DE 20 MBLS.\n\nDesarrollo: Construcción de 8 esferas de almacenamiento de 20 MBLS,\na) Trazo, corte, conformado de la esfera y biselado de placa en taller\nb) Montaje, armado de la esfera, punteo de placa del cuerpo de las esferas en el sitio de la obra.\nc) Soldadura del cuerpo de las esferas en sitio.\nd) Montaje de estructura soporte (patas).\ne) Montaje, armado, soldeo de boquillas.\nf) Montaje, armado y soldadura de accesorios.\ng) Montaje, armado, soldeo de escalera helicoidal\nh) Inspecciones y pruebas.\n\nFABRICACION DE TANQUES DE ALMACENAMIENTO DE 150 MBL\nDesarrollo: Construcción de 7 tanques de almacenamiento de 150,000 MBLS,\na) Montaje, armado, soldeo de placa de fondo.\nMontaje, armado, de placa de cuerpo\nSoldadura del cuerpo de las esferas en sitio.\nd) Montaje de estructura soporte cúpula.\ne) Montaje de cúpula o domo.\nf) Soldadura de fondo.\ng) Soldadura de cúpula\nh) Montaje de membrana flotante interna.\ni) Montaje y soldadura de accesorios.\nj) Inspecciones y pruebas.\nk) Terminación mecánica.\n1) Trabajos de pintura y aislamiento.",
+    "id": "DOS BOCAS ESFERAS",
+    "titulo": "DOS BOCAS ESFERAS",
+    "texto-izquierdo": "Fabricación de esferas de almacenamiento de 20 Mbls, para el proyecto de la Refineria Dos Bocas, Paraíso, Tabasco",
+    "text-derecho": "Cliente: PTI INFRAESTRUCTURA DE DESARROLLO S.A. DE C.V. \n Plazo de ejecución: 460 días naturales \n Desarrollo: Construcción de 8 esferas de almacenamiento de 20 MBLS, \n a) Trazo, corte, conformado de la esfera y biselado de placa en taller\n b) Montaje, armado de la esfera,  punteo de placa del cuerpo de las esferas en el sitio de la obra.\n c) Soldadura del cuerpo de las esferas en sitio.\n d) Montaje de estructura soporte (patas).\n e) Montaje, armado,  soldeo de boquillas.\n f) Montaje,  armado y soldadura de accesorios. \n g) Montaje,  armado,  soldeo de escalera helicoidal \n h) Inspecciones y pruebas.",
     "imgId": "DOSBOCAS",
+    "imagen": "https://grupomarsori.com/images/PROYECTO_TRMIGAS.jpg",
     "imagenes": [
       "DOSBOCAS_01",
       "DOSBOCAS_02",
@@ -39,13 +33,15 @@
       "DOSBOCAS_15",
       "DOSBOCAS_16"
     ],
-    "key": "DOSBOCAS"
+    "key": "DOSBOCASESFERAS"
   },
   {
-    "id": "MONOPOLOS",
-    "titulo": "MONOPOLOS",
-    "texto": "Servicio Integral de las Telecomunicaciones Industriales Redundantes para las Tecnologías Operacionales del CENAGAS (SITROC)\n\n• Estudios Preliminares. Mecánica de suelos o Geotécnico.\n• Estudios Preliminares. Resistividad.\n• Estudios Preliminares. Topografía.\n• Estudios Preliminares. Georradar.\n• Elaboración y emisión de Ingeniería Civil.\n• Elaboración y emisión de Ingeniería Electromecánica. Con emisión de listas de materiales.\n• Elaboración y emisión de Ingeniería de Telecomunicaciones con emisión de lista de materiales.\n• Suministros de materiales para Obra Electromecánica. Incluyendo sistema de Tierras.\n• Suministros de materiales para Obra de Telecomunicaciones. Incluyendo sistema de Tierras.\n• Recolección de Poste (Monopolo)\n• Montaje de Poste (Monopolo)\n• Construcción de Cimentación de Poste (Monopolo)\n• Construcción de Canalizaciones Civiles.\n• Instalación e interconexión de Obra Electromecánica.\n• Instalación e interconexión de conductores de Obra de Telecomunicaciones.\n• Instalación e interconexión de Sistema de Tierras Eléctrico.\n• Instalación e interconexión de Sistema de Tierras de Telecomunicaciones.\n• Apoyo parametrización de equipos de Teltronic.\n• Apoyo para pruebas locales. Con emisión de protocolos.\n• Apoyo para pruebas de enlace a nivel superior. Con emisión de protocolos.\n• As bult.",
-    "imgId": "MONOPOLOS",
+    "id": "DOS BOCAS TANQUES",
+    "titulo": "DOS BOCAS TANQUES",
+    "texto-izquierdo": "Cliente: PTI INFRAESTRUCTURA DE DESARROLLO S.A. DE C.V.",
+    "text-derecho": "Desarrollo:  Construcción de 7 tanques de almacenamiento de 150,000 MBLS, \n a) Montaje, armado,  soldeo de placa de fondo. \n b) Montaje, armado, de placa de cuerpo \n c) Soldadura del cuerpo de las esferas en sitio. \n d) Montaje de estructura soporte cúpula.\n e)  Montaje de cúpula o domo.\n f) Soldadura de fondo.\n g) Soldadura de cúpula \n h) Montaje de membrana flotante interna.\n i) Montaje y soldadura de accesorios. \n j) Inspecciones y pruebas. \n k) Terminación mecánica.\n l) Trabajos de pintura y aislamiento.",
+    "imgId": "DOSBOCAS_TANQUES",
+    "imagen": "https://grupomarsori.com/images/PROYECTO_TRMIGAS.jpg",
     "imagenes": [
       "MONOPOLOS_01",
       "MONOPOLOS_02",
@@ -57,5 +53,62 @@
       "MONOPOLOS_08"
     ],
     "key": "MONOPOLOS"
+  },
+  {
+    "id": "MONOPOLOS",
+    "titulo": "MONOPOLOS",
+    "texto-izquierdo": "Servicio Integral de las Telecomunicaciones Industriales Redundantes para las Tecnologías Operacionales del CENAGAS (SITROC)",
+    "text-derecho": "a) Estudios Preliminares. Mecánica de suelos o Geotécnico.\n b) Estudios Preliminares. Resistividad.\n c) Estudios Preliminares. Topografía.\n d) Estudios Preliminares. Georradar.\n e) Elaboración y emisión de Ingeniería Civil.\n f) Elaboración y emisión de Ingeniería Electromecánica. Con emisión de listas de materiales.\n g) Elaboración y emisión de Ingeniería de Telecomunicaciones con emisión de lista de materiales.\n h) Suministros de materiales para Obra Electromecánica. Incluyendo sistema de Tierras.\n i) Suministros de materiales para Obra de Telecomunicaciones. Incluyendo sistema de Tierras.\n j) Recolección de Poste (Monopolo).\n k) Montaje de Poste (Monopolo).\n l) Construcción de Cimentación de Poste (Monopolo).\n m) Construcción de Canalizaciones Civiles.\n n) Instalación e interconexión de Obra Electromecánica.\n o) Instalación e interconexión de conductores de Obra de Telecomunicaciones.\n p) Instalación e interconexión de Sistema de Tierras Eléctrico.\n q) Instalación e interconexión de Sistema de Tierras de Telecomunicaciones.\n r) Apoyo parametrización de equipos de Teltronic.\n s) Apoyo para pruebas locales. Con emisión de protocolos.\n t) Apoyo para pruebas de enlace a nivel superior. Con emisión de protocolos.\n u) As bult.",
+    "imgId": "MONOPOLOS",
+    "imagen": "https://grupomarsori.com/images/PROYECTO_TRMIGAS.jpg",
+    "imagenes": [
+      "MONOPOLOS_01",
+      "MONOPOLOS_02",
+      "MONOPOLOS_03",
+      "MONOPOLOS_04",
+      "MONOPOLOS_05",
+      "MONOPOLOS_06",
+      "MONOPOLOS_07",
+      "MONOPOLOS_08"
+    ],
+    "key": "MONOPOLOS"
+  },
+  {
+    "id": "GASUDUCTOS MEXICANOS",
+    "titulo": "GASUDUCTOS MEXICANOS",
+    "texto-izquierdo": "Ducto de 10 pulgadas y 234 km de longitud (aproximadamente 60,000 bpd) para el transporte de gas LP desde Poza Rica, Veracruz, hasta Atotonilco de Tula, Hgo.",
+    "text-derecho": "Columna derecha: \n Cliente: Gasoductos Mexicanos, SA de CV \n Periodo: 2012­2015 \n Servicios: Gestión de Proyectos, EPC, Operación y Mantenimiento. \n Plantilla: 27 profesionales.",
+    "imgId": "MONOPOLOS",
+    "imagen": "https://grupomarsori.com/images/PROYECTO_TRMIGAS.jpg",
+    "imagenes": [
+      "MONOPOLOS_01",
+      "MONOPOLOS_02",
+      "MONOPOLOS_03",
+      "MONOPOLOS_04",
+      "MONOPOLOS_05",
+      "MONOPOLOS_06",
+      "MONOPOLOS_07",
+      "MONOPOLOS_08"
+    ],
+    "key": "GASODUCTOSMEXICANOS"
+  },
+  {
+    "id": "TERMI CENTRO",
+    "titulo": "TERMI CENTRO",
+    "texto-izquierdo": "Terminal de almacenamiento de gas LP (capacidad de 80,000 barriles) recibiendo producto mediante operaciones de tren unitario en San Luis Potosí, SLP.",
+    "text-derecho": "Cliente: Termi­Centro, SA de CV \n Servicios: Gestión de proyectos, control de proyectos, EPC \n Supervisión, puesta en marcha, operación y mantenimiento.",
+    "imgId": "MONOPOLOS",
+    "imagen": "https://grupomarsori.com/images/PROYECTO_TRMIGAS.jpg",
+    "imagenes": [
+      "MONOPOLOS_01",
+      "MONOPOLOS_02",
+      "MONOPOLOS_03",
+      "MONOPOLOS_04",
+      "MONOPOLOS_05",
+      "MONOPOLOS_06",
+      "MONOPOLOS_07",
+      "MONOPOLOS_08"
+    ],
+    "key": "GASODUCTOSMEXICANOS"
   }
 ]

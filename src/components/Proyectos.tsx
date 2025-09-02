@@ -1,8 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import ImgTermigas from "../assets/img/proyectos-home/PROYECTO_TRMIGAS.jpg";
-import ImgMono from "../assets/img/proyectos-home/MONOPOLOS.jpg";
-import ImgPemex from "../assets/img/proyectos-home/DOSBOCAS.jpg";
+import { defaultProyectos } from "../proyectosData";
+
 interface Proyecto {
   titulo: string;
   imagen: string;
@@ -13,21 +12,6 @@ interface ProyectosProps {
   proyectos?: Proyecto[];
   onVerMas?: () => void;
 }
-
-const defaultProyectos: Proyecto[] = [
-  {
-    titulo: "TERMIGAS",
-    imagen: ImgTermigas,
-  },
-  {
-    titulo: "MONOPOLOS",
-    imagen: ImgMono,
-  },
-  {
-    titulo: "DOS BOCAS",
-    imagen: ImgPemex,
-  },
-];
 
 const Proyectos: React.FC<ProyectosProps> = ({
   titulo = "PROYECTOS DE GRUPO MARSORI",

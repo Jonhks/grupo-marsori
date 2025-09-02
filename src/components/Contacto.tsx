@@ -1,5 +1,4 @@
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
-import ImgBanner from "../assets/img/banner.jpg";
 interface ContactoProps {
   telefono?: string[];
   correo?: string;
@@ -19,7 +18,7 @@ const Contacto: React.FC<ContactoProps> = ({
       {/* Banner superior con imagen de fondo y logo */}
       <div className="left-0 top-0 w-screen h-56 md:h-72 relative flex items-center justify-center overflow-hidden">
         <img
-          src={ImgBanner}
+          src={"https://grupomarsori.com/images/banner-home.jpg"}
           alt="Banner Marsori"
           className="w-full h-full object-cover opacity-80 block"
         />

@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { lazy } from "react";
 import Layout from "./views/Layout";
+import ScrollToTop from "./components/ScrollTop";
 const App = lazy(() => import("./App"));
 const Nosotros = lazy(() => import("./views/Nosotros"));
 const Servicios = lazy(() => import("./views/Servicios"));
@@ -10,6 +11,7 @@ const Contacto = lazy(() => import("./views/Contacto"));
 const Router = () => {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route element={<Layout />}>
           <Route

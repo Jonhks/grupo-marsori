@@ -1,9 +1,6 @@
 import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import proyectos from "../proyectos.json";
-import PROYECTO_TRMIGAS from "../assets/img/proyectos-home/PROYECTO_TRMIGAS.jpg";
-import DOSBOCAS from "../assets/img/proyectos-home/DOSBOCAS.jpg";
-import MONOPOLOS from "../assets/img/proyectos-home/MONOPOLOS.jpg";
 
 import TERMIGAS_01 from "../assets/img/carruselDinamico/termigas/TERMIGAS_01.jpg";
 
@@ -33,12 +30,12 @@ import MONOPOLOS_06 from "../assets/img/carruselDinamico/monopolos/MONOPOLOS_06.
 import MONOPOLOS_07 from "../assets/img/carruselDinamico/monopolos/MONOPOLOS_07.jpg";
 import MONOPOLOS_08 from "../assets/img/carruselDinamico/monopolos/MONOPOLOS_08.jpg";
 import SliderDinamico from "../components/SliderDinamico";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 
 const images: Record<string, string | string[]> = {
-  PROYECTO_TRMIGAS,
-  DOSBOCAS_HOME: DOSBOCAS,
-  MONOPOLOS_HOME: MONOPOLOS,
+  PROYECTO_TRMIGAS: "https://grupomarsori.com/images/PROYECTO_TRMIGAS.jpg",
+  DOSBOCAS_HOME: "https://grupomarsori.com/images/DOSBOCAS.jpg",
+  MONOPOLOS_HOME: "https://grupomarsori.com/images/MONOPOLOS.jpg",
   TERMIGAS: [TERMIGAS_01],
   DOSBOCAS: [
     DOSBOCAS_01,
@@ -76,106 +73,116 @@ const Proyectos = () => {
   const [activeProyecto, setActiveProyecto] = useState(
     proyectoSeleccionado || proyectos[0].id
   );
-
-  console.log(proyectoSeleccionado);
   console.log(activeProyecto);
 
-  const Motion = motion.section;
+  // const Motion = motion.section;
 
   return (
     <div className="w-full flex flex-col items-center py-12 bg-white">
-      <div className="flex max-w-[50%] justify-between items-center gap-8 mb-8">
-        {proyectos.map((proyecto) => {
+      <h2 className="font-montserrat font-bold text-2xl md:text-3xl text-[#000] text-center mb-10 tracking-tight">
+        {"PROYECTOS DE GRUPO MARSORI"}
+      </h2>
+      <div className="flex flex-col md:flex-row gap-8 w-full max-w-7xl justify-center mb-8 flex-wrap">
+        {proyectos.map((proyecto, idx) => {
           return (
             <div
-              key={proyecto.id}
-              className={`cursor-pointer transition-transform transform hover:scale-105 flex flex-col items-center justify-center  ${
-                activeProyecto === proyecto.id ? "opacity-100" : "opacity-70"
-              }`}
+              key={idx}
+              className="flex flex-col items-center w-full md:w-1/3 lg:w-1/5 cursor-pointer"
               onClick={() => setActiveProyecto(proyecto.id)}
             >
-              <img
-                src={
-                  Array.isArray(images[proyecto.imgId])
-                    ? (images[proyecto.imgId] as string[])[0]
-                    : (images[proyecto.imgId] as string)
-                }
-                alt={proyecto.titulo}
-                className="w-16 h-16 md:w-24 md:h-24 object-cover rounded-full border-2 border-gray-300"
-              />
-              <span className="block text-[12px] md:text-[18px] mt-2 text-center">
+              <div className="w-full h-80 aspect-square overflow-hidden bg-gray-200 flex items-center justify-center group relative">
+                <img
+                  src={proyecto.imagen}
+                  alt={proyecto.titulo}
+                  className="object-cover w-full h-full"
+                />
+                <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition-all"></div>
+              </div>
+              <span className="font-montserrat font-medium text-xl md:text-2xl text-[#000] mt-4 text-center">
                 {proyecto.titulo}
               </span>
             </div>
+            // <div
+            //   key={proyecto.id}
+            //   className={`cursor-pointer transition-transform transform hover:scale-105 flex flex-col items-center justify-center  ${
+            //     activeProyecto === proyecto.id ? "opacity-100" : "opacity-70"
+            //   }`}
+            //   onClick={() => setActiveProyecto(proyecto.id)}
+            // >
+            //   <img
+            //     src={
+            //       Array.isArray(images[proyecto.imgId])
+            //         ? (images[proyecto.imgId] as string[])[0]
+            //         : (images[proyecto.imgId] as string)
+            //     }
+            //     alt={proyecto.titulo}
+            //     className="w-16 h-16 md:w-24 md:h-24 object-cover rounded-full border-2 border-gray-300"
+            //   />
+            //   <span className="block text-[12px] md:text-[18px] mt-2 text-center">
+            //     {proyecto.titulo}
+            //   </span>
+            // </div>
+            // <div className="flex flex-col md:flex-row gap-8 w-full max-w-5xl justify-center mb-8">
           );
         })}
       </div>
-      <Motion
-        initial={{ opacity: 0, y: -100 }} // Comienza abajo y transparente
-        whileInView={{ opacity: 1, y: 0 }} // Termina en su lugar y visible
-        transition={{ duration: 1.7, ease: "easeOut" }}
-        viewport={{ once: true }}
-      >
-        {/* Contenido del proyecto seleccionado */}
-        <div className="w-full max-w-6xl p-4 shadow-sm">
-          {proyectos.map(
-            (proyecto) =>
-              proyecto.id === activeProyecto && (
-                <div key={proyecto.id}>
-                  <h2 className="text-lg md:text-3xl text-center font-bold mb-4">
-                    {proyecto.titulo}
-                  </h2>
-                  <SliderDinamico
-                    images={
-                      Array.isArray(images[proyecto.key])
-                        ? (images[proyecto.key] as string[])
-                        : [images[proyecto.key] as string]
-                    }
-                  />
-                  <p className="flex justify-end mt-4 text-[#707070] font-montserrat text-md">
-                    {proyecto.imagenes.length}{" "}
-                    {`
-                      ${proyecto.imagenes.length > 1 ? "imágenes" : "imagen"}`}
-                  </p>
 
-                  <div className="flex flex-col md:flex-row justify-between mt-8 pt-4 items-stretch">
-                    <div className="md:w-1/2 text-center p-4 md:px-12 flex flex-col justify-center items-center text-[#707070] font-montserrat text-lg">
-                      <p className="font-medium ">
-                        Fabricación de Esferas de Almacenamiento de 20 MBLS
-                      </p>
-                      <p className="font-medium">
-                        Fabricación de Tanques de Almacenamiento de 150 MBLS
-                      </p>
-                    </div>
-                    <div
-                      className="md:w-1/2 text-left p-4 md:px-12 md:border-l-[2px] border-[#707070]"
-                      style={{}}
-                    >
-                      <ul className="list-disc pl-5 text-[#707070] font-montserrat text-md">
-                        <li>
-                          Trazo, corte, conformado, biselado de placa en taller
-                          del fabricante.
-                        </li>
-                        <li>
-                          Montaje, armado, punteo de placa del cuerpo en el
-                          sitio de la obra.
-                        </li>
-                        <li>Soldadura del cuerpo.</li>
-                        <li>Montaje de estructura soporte (patas).</li>
-                        <li>Montaje, armado, soldado de boquillas.</li>
-                        <li>Montaje, armado, soldadura de accesorios.</li>
-                        <li>
-                          Montaje, armado, soldado de escalera helicoidal.
-                        </li>
-                        <li>Inspecciones y pruebas.</li>
-                      </ul>
-                    </div>
+      {/* Contenido del proyecto seleccionado */}
+      <div className="w-full max-w-6xl p-4 shadow-sm">
+        {proyectos.map(
+          (proyecto) =>
+            proyecto.id === activeProyecto && (
+              <div key={proyecto.id}>
+                <h2 className="text-lg md:text-3xl text-center font-bold mb-4">
+                  {proyecto.titulo}
+                </h2>
+                <SliderDinamico
+                  images={
+                    Array.isArray(images[proyecto.key])
+                      ? (images[proyecto.key] as string[])
+                      : [images[proyecto.key] as string]
+                  }
+                />
+                <p className="flex justify-end mt-4 text-[#707070] font-montserrat text-md">
+                  {/* {proyecto.imagenes.length}{" "} */}
+                  {/* {`${proyecto.imagenes.length > 1 ? "imágenes" : "imagen"}`} */}
+                </p>
+
+                <div className="flex flex-col md:flex-row justify-between mt-8 pt-4 items-stretch">
+                  <div className="md:w-1/2 text-center p-4 md:px-12 flex flex-col justify-center items-center text-[#707070] font-montserrat text-lg">
+                    <p className="font-medium ">
+                      Fabricación de Esferas de Almacenamiento de 20 MBLS
+                    </p>
+                    <p className="font-medium">
+                      Fabricación de Tanques de Almacenamiento de 150 MBLS
+                    </p>
+                  </div>
+                  <div
+                    className="md:w-1/2 text-left p-4 md:px-12 md:border-l-[2px] border-[#707070]"
+                    style={{}}
+                  >
+                    <ul className="list-disc pl-5 text-[#707070] font-montserrat text-md">
+                      <li>
+                        Trazo, corte, conformado, biselado de placa en taller
+                        del fabricante.
+                      </li>
+                      <li>
+                        Montaje, armado, punteo de placa del cuerpo en el sitio
+                        de la obra.
+                      </li>
+                      <li>Soldadura del cuerpo.</li>
+                      <li>Montaje de estructura soporte (patas).</li>
+                      <li>Montaje, armado, soldado de boquillas.</li>
+                      <li>Montaje, armado, soldadura de accesorios.</li>
+                      <li>Montaje, armado, soldado de escalera helicoidal.</li>
+                      <li>Inspecciones y pruebas.</li>
+                    </ul>
                   </div>
                 </div>
-              )
-          )}
-        </div>
-      </Motion>
+              </div>
+            )
+        )}
+      </div>
     </div>
   );
 };

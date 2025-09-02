@@ -2,6 +2,7 @@ import { Swiper as SwiperComponent, SwiperSlide } from "swiper/react";
 import "../../../node_modules/swiper/swiper-bundle.min.css";
 import "../../../node_modules/swiper/swiper.min.css";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import "./Swiper.css"; // Importa un archivo CSS personalizado para Swiper
 
 export default function Swiper() {
   // Ejemplo de imágenes, reemplaza por tus propias rutas
@@ -18,7 +19,7 @@ export default function Swiper() {
       <SwiperComponent
         navigation={true}
         pagination={{ clickable: true }}
-        autoplay={{ delay: 2000, disableOnInteraction: false }}
+        autoplay={{ delay: 4000, disableOnInteraction: false }}
         modules={[Navigation, Pagination, Autoplay]}
         className=" shadow-lg bg-white"
       >
