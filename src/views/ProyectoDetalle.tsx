@@ -2,6 +2,7 @@ import { useLocation, useNavigate, useParams } from "react-router-dom";
 import proyectos from "../proyectos.json";
 import SliderDinamico from "../components/SliderDinamico";
 import { motion } from "framer-motion";
+import Swiper from "../components/Swiper/Swiper";
 
 const ProyectoDetalle = () => {
   const location = useLocation();
@@ -15,7 +16,7 @@ const ProyectoDetalle = () => {
   }
 
   return (
-    <div className="w-full flex flex-col items-center py-12 bg-white">
+    <div className="w-full flex flex-col items-center py-12 ">
       <Motion
         initial={{ opacity: 0, y: -100 }} // Comienza abajo y transparente
         whileInView={{ opacity: 1, y: 0 }} // Termina en su lugar y visible
@@ -27,7 +28,7 @@ const ProyectoDetalle = () => {
             proyecto.id === id && (
               <div
                 key={proyecto.id}
-                className="max-w-[70vw]"
+                className="max-w-[95vw] md:max-w-[70vw] "
               >
                 <button
                   className="bg-black text-white font-montserrat font-medium text-md px-4 py-2 rounded hover:bg-gray-400 transition-all mb-4"
@@ -38,21 +39,33 @@ const ProyectoDetalle = () => {
                 <h2 className="text-lg md:text-3xl text-center font-bold mb-4">
                   {proyecto.titulo}
                 </h2>
-                <SliderDinamico
-                  images={
-                    Array.isArray(proyecto.imagenes)
-                      ? proyecto.imagenes
-                      : [proyecto.imagen]
-                  }
-                />
+                <div className=" hidden md:block">
+                  <SliderDinamico
+                    images={
+                      Array.isArray(proyecto.imagenes)
+                        ? proyecto.imagenes
+                        : [proyecto.imagen]
+                    }
+                  />
+                </div>
+                <div className="md:hidden">
+                  <Swiper
+                    images={
+                      Array.isArray(proyecto.imagenes)
+                        ? proyecto.imagenes
+                        : [proyecto.imagen]
+                    }
+                  />
+                </div>
+                <div className="hidden md:block text-end text-sm text-[#707070] font-montserrat mt-2">
+                  {proyecto.imagenes.length}{" "}
+                  {proyecto.imagenes.length === 1 ? "imagen" : "imágenes"}
+                </div>
                 <div className="flex flex-col md:flex-row justify-between mt-8 pt-4 items-stretch">
                   <div className="md:w-1/2 text-center p-4 md:px-12 flex flex-col justify-center items-center text-[#707070] font-montserrat text-lg">
                     {proyecto["texto-izquierdo"]}
                   </div>
-                  <div
-                    className="md:w-1/2 text-left p-4 md:px-12 md:border-l-[2px] border-[#707070]"
-                    style={{}}
-                  >
+                  <div className="md:w-1/2 text-left p-4 md:px-12 md:border-l-[2px] border-[#707070]">
                     <ul className="list-disc pl-5 text-[#707070] font-montserrat text-md">
                       {proyecto["text-derecho"]
                         .split("\n")

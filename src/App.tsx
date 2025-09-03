@@ -7,6 +7,14 @@ import { motion } from "framer-motion";
 function App() {
   const Motion = motion.section;
 
+  const images = [
+    "https://grupomarsori.com/images/home-Banner01.jpg",
+    "https://grupomarsori.com/images/home-Banner02.jpg",
+    "https://grupomarsori.com/images/home-Banner03.jpg",
+    "https://grupomarsori.com/images/home-Banner04.jpg",
+    "https://grupomarsori.com/images/home-Banner05.jpg",
+  ];
+
   return (
     <div className="">
       <Motion
@@ -22,7 +30,7 @@ function App() {
             className="m-2 w-32 sm:w-40 md:w-56 lg:w-64"
           />
         </div>
-        <Swiper />
+        <Swiper images={images} />
       </Motion>
       <Motion
         initial={{ opacity: 0, y: 100 }} // Comienza abajo y transparente

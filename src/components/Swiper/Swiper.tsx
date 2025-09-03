@@ -4,16 +4,11 @@ import "../../../node_modules/swiper/swiper.min.css";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "./Swiper.css"; // Importa un archivo CSS personalizado para Swiper
 
-export default function Swiper() {
-  // Ejemplo de imágenes, reemplaza por tus propias rutas
-  const images = [
-    "https://grupomarsori.com/images/home-Banner01.jpg",
-    "https://grupomarsori.com/images/home-Banner02.jpg",
-    "https://grupomarsori.com/images/home-Banner03.jpg",
-    "https://grupomarsori.com/images/home-Banner04.jpg",
-    "https://grupomarsori.com/images/home-Banner05.jpg",
-  ];
+interface SwiperProps {
+  images: string[];
+}
 
+export default function Swiper({ images }: SwiperProps) {
   return (
     <div className="w-full max-w-8xl mx-auto py-0">
       <SwiperComponent
