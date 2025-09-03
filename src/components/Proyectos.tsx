@@ -5,6 +5,7 @@ import { defaultProyectos } from "../proyectosData";
 interface Proyecto {
   titulo: string;
   imagen: string;
+  id: string;
 }
 
 interface ProyectosProps {
@@ -28,8 +29,8 @@ const Proyectos: React.FC<ProyectosProps> = ({
   };
 
   const handleProyectoClick = (proyecto: Proyecto) => {
-    navigate("/proyectos", {
-      state: { proyectoSeleccionado: proyecto.titulo.toUpperCase() },
+    navigate(`/proyecto/${proyecto.id}`, {
+      state: { proyectoSeleccionado: proyecto },
     });
   };
 
