@@ -68,7 +68,7 @@ const Nosotros = () => {
           />
         </div>
         {/* Sección Misión, Visión, Política debajo del banner */}
-        <div className="w-full max-w-4xl mx-auto mt-16 mb-12 flex flex-col gap-12">
+        <div className="w-full max-w-4xl mx-auto mt-16 mb-12 flex flex-col gap-12 p-4">
           <div>
             <h3 className="font-montserrat font-bold text-3xl md:text-4xl text-[#181818] mb-4">
               MISIÓN
