@@ -4,7 +4,7 @@ const Privacidad: React.FC = () => {
       <h1 className="text-2xl md:text-3xl font-bold text-center mb-6">
         AVISO DE PRIVACIDAD. AVISO DE PROTECCIÓN DE DATOS.{" "}
       </h1>
-      <div className=" w-[60%] px-15">
+      <div className=" w-full md:w-[60%] md:px-15">
         <h2 className="text-xl font-semibold mb-4 text-left">
           A. Declaración de privacidad.
         </h2>
@@ -28,13 +28,13 @@ const Privacidad: React.FC = () => {
           tácitamente el tratamiento de sus datos siempre y cuando no nos
           manifieste su oposición.
         </p>
-        <div className=" w-[80%] px-15">
+        <div className=" w-full md:w-[80%] md:px-15">
           <h2 className="text-xl font-semibold mb-4 text-left w-full">
             B. Finalidad y tratamiento de la Información Personal.
           </h2>
         </div>
 
-        <p className="mb-4 p-8">
+        <p className="mb-4 md:p-8">
           1.- La información personal que nos proporciona será utilizada por El
           Prestador para las siguientes finalidades: proveer los servicios y
           productos que ha solicitado; notificarle sobre nuevos servicios y/o
@@ -79,12 +79,12 @@ const Privacidad: React.FC = () => {
           entenderemos que ha otorgado su consentimiento en forma tácita para
           ello.
         </p>
-        <p className="mb-4 p-8">
+        <p className="mb-4 p-0 md:p-8">
           2.- Finalmente la información que nos proporciona podrá ser tratada en
           los casos que expresamente autoriza el artículo 10 la Ley Federal de
           Protección de Datos Personales en Posesión de los Particulares
         </p>
-        <div className=" w-[80%] px-15">
+        <div className="w-full md:w-[80%] md:px-15">
           <h2 className="text-xl font-semibold mb-4 text-left">
             C. Uso de Datos Personales Sensibles.
           </h2>
@@ -102,7 +102,7 @@ const Privacidad: React.FC = () => {
           necesidades de los clientes y los servicios que se les proporcionan a
           los mismos.
         </p>
-        <div className=" w-[90%] px-15">
+        <div className=" w-[90%] md:px-15">
           <h2 className="text-xl font-semibold mb-4 text-left">
             D. Limitación al Uso o Divulgación de Información Personal.
           </h2>
@@ -119,7 +119,7 @@ const Privacidad: React.FC = () => {
           escrito al domicilio o correo electrónico que haya proporcionado en su
           escrito de solicitud a elección de ustedes.
         </p>
-        <div className=" w-[100%] px-15">
+        <div className=" w-[100%] md:px-15">
           <h2 className="text-xl font-semibold mb-4 text-left">
             E. Del ejercicio de los Derechos de Acceso, Rectificación,
             Cancelación y Oposición
@@ -134,7 +134,7 @@ const Privacidad: React.FC = () => {
           misma que se le responderá por escrito o mediante correo electrónico
           en los términos ahí señalados.
         </p>
-        <div className=" w-[100%] px-15">
+        <div className=" w-[100%] md:px-15">
           <h2 className="text-xl font-semibold mb-4 text-left">
             F. Control y Seguridad de Información Personal.
           </h2>
@@ -152,7 +152,7 @@ const Privacidad: React.FC = () => {
           control absoluto y/o tenga dependencia con internet puede garantizar
           que sea totalmente seguro.
         </p>
-        <div className=" w-[100%] px-15">
+        <div className=" w-[100%] md:px-15">
           <h2 className="text-xl font-semibold mb-4 text-left">
             G. Medios electrónicos cookies.
           </h2>
@@ -196,7 +196,7 @@ const Privacidad: React.FC = () => {
           permitirán tomar ventaja de las características más benéficas que le
           ofrecemos, por lo que le recomendamos que las deje activadas.
         </p>
-        <div className=" w-[100%] px-15">
+        <div className=" w-[100%] md:px-15">
           <h2 className="text-xl font-semibold mb-4 text-left">
             H. Cambios a esta declaración de privacidad.
           </h2>
