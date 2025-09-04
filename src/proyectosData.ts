@@ -5,13 +5,13 @@ export const defaultProyectos = [
     id: "TERMIGAS",
   },
   {
-    titulo: "MONOPOLOS",
-    imagen: "https://grupomarsori.com/images/MONOPOLOS.jpg",
-    id: "MONOPOLOS",
+    titulo: "GASODUCTOS MEXICANOS",
+    imagen: "https://grupomarsori.com/images/GASODUCTOS02.jpg",
+    id: "GASODUCTOS",
   },
   {
-    titulo: "DOS BOCAS ESFERAS",
-    imagen: "https://grupomarsori.com/images/DOSBOCAS.jpg",
-    id: "DOS BOCAS ESFERAS",
+    titulo: "TERMICENTRO",
+    imagen: "https://grupomarsori.com/images/TERMICENTRO01.jpg",
+    id: "TERMICENTRO",
   },
 ];

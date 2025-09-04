@@ -3,7 +3,7 @@
     "id": "TERMIGAS",
     "titulo": "TERMIGAS",
     "texto-izquierdo": "Terminal Portuaria de Almacenamiento de Gas LP de 450,000 barriles en Tuxpan, Veracruz",
-    "text-derecho": "Cliente: Termigas, SA de CV \n Periodo: 2009­2011 \n Periodo O&M: 2012­2014 \n Servicios: Gestión de Proyectos, EPC Operaciones y Mantenimiento \n Personal empleado: \n 27 profesionales \n Personal O&M: 30 empleados en 3 turnos",
+    "text-derecho": "Cliente: Termigas, SA de CV \n Periodo: 2009 - ­2011 \n Periodo O&M: 2012- ­2014 \n Servicios: Gestión de Proyectos, EPC Operaciones y Mantenimiento \n Personal empleado: \n 27 profesionales \n Personal O&M: 30 empleados en 3 turnos",
     "imgId": "PROYECTO_TRMIGAS",
     "imagen": "https://grupomarsori.com/images/PROYECTO_TRMIGAS.jpg",
     "imagenes": [
@@ -75,12 +75,15 @@
     "id": "GASODUCTOS MEXICANOS",
     "titulo": "GASODUCTOS MEXICANOS",
     "texto-izquierdo": "Ducto de 10 pulgadas y 234 km de longitud (aproximadamente 60,000 bpd) para el transporte de gas LP desde Poza Rica, Veracruz, hasta Atotonilco de Tula, Hgo.",
-    "text-derecho": "Cliente: Gasoductos Mexicanos, SA de CV \n Periodo: 2012­2015 \n Servicios: Gestión de Proyectos, EPC, Operación y Mantenimiento. \n Plantilla: 27 profesionales.",
+    "text-derecho": "Cliente: Gasoductos Mexicanos, SA de CV \n Periodo: 2012 - 2015 \n Servicios: Gestión de Proyectos, EPC, Operación y Mantenimiento. \n Plantilla: 27 profesionales.",
     "imgId": "MONOPOLOS",
     "imagen": "https://grupomarsori.com/images/GASODUCTOS01.jpg",
     "imagenes": [
       "https://grupomarsori.com/images/GASODUCTOS01.jpg",
-      "https://grupomarsori.com/images/MONOPOLOS_02.jpg"
+      "https://grupomarsori.com/images/MONOPOLOS_02.jpg",
+      "https://grupomarsori.com/images/GASODUCTOS03.jpg",
+      "https://grupomarsori.com/images/GASODUCTOS04.jpg",
+      "https://grupomarsori.com/images/GASODUCTOS05.jpg"
     ],
     "key": "GASODUCTOSMEXICANOS"
   },
@@ -93,7 +96,10 @@
     "imagen": "https://grupomarsori.com/images/TERMICENTRO01.jpg",
     "imagenes": [
       "https://grupomarsori.com/images/TERMICENTRO01.jpg",
-      "https://grupomarsori.com/images/TERMICENTRO02.jpg"
+      "https://grupomarsori.com/images/TERMICENTRO02.jpg",
+      "https://grupomarsori.com/images/MONOPOLOS_05.jpg",
+      "https://grupomarsori.com/images/TERMICENTRO03.jpg",
+      "https://grupomarsori.com/images/TERMICENTRO04.jpg"
     ],
     "key": "GASODUCTOSMEXICANOS"
   }

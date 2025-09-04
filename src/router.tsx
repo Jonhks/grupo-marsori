@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { lazy } from "react";
 import Layout from "./views/Layout";
 import ScrollToTop from "./components/ScrollTop";
+import Privacidad from "./views/Privacidad";
 const App = lazy(() => import("./App"));
 const Nosotros = lazy(() => import("./views/Nosotros"));
 const Servicios = lazy(() => import("./views/Servicios"));
@@ -38,6 +39,10 @@ const Router = () => {
           <Route
             path="/contacto"
             element={<Contacto />}
+          />
+          <Route
+            path="/aviso-de-privacidad"
+            element={<Privacidad />}
           />
         </Route>
       </Routes>

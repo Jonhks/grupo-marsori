@@ -18,7 +18,7 @@ const defaultMenu = [
   { label: "SERVICIOS", to: "/servicios" },
   { label: "PROYECTOS", to: "/proyectos" },
   { label: "CONTACTO", to: "/contacto" },
-  { label: "AVISO DE PRIVACIDAD", to: "/" },
+  { label: "AVISO DE PRIVACIDAD", to: "/aviso-de-privacidad" },
 ];
 
 const Footer: React.FC<FooterProps> = ({ menu = defaultMenu }) => {

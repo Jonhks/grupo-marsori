@@ -8,6 +8,7 @@ function App() {
   const Motion = motion.section;
 
   const images = [
+    "https://grupomarsori.com/images/GRUPOMARSORI_BANNER_0001.png",
     "https://grupomarsori.com/images/home-Banner01.jpg",
     "https://grupomarsori.com/images/home-Banner02.jpg",
     "https://grupomarsori.com/images/home-Banner03.jpg",
