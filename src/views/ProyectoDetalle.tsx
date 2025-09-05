@@ -29,7 +29,7 @@ const ProyectoDetalle = () => {
             proyecto.id === id && (
               <div
                 key={proyecto.id}
-                className="max-w-[95vw] md:max-w-[70vw] "
+                className="max-w-[95vw] md:max-w-[60vw]"
               >
                 <button
                   className="bg-white text-black font-montserrat font-medium text-md px-4 py-2 rounded hover:bg-gray-400 transition-all mb-4 flex items-center hover:cursor-pointer"
